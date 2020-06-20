@@ -1,3 +1,24 @@
+/**
+ * QUESTION:
+ * You are given a Singly Linked List with N nodes where each node next pointing to its next node. 
+ * You are also given M random pointers , where you will be given M number of pairs denoting two nodes a and b  i.e. a->arb = b.
+ * 
+ * INPUT:
+ * First line of input contains number of testcases T. 
+ * For each testcase, first line of input contains two integers N and M. 
+ * Next line of input contains values of N nodes of the linked list and last line contains M pairs denoting arbitrary connecting  nodes, 
+ * for which each ith node is connected to any jth node. ( ith->arb = jth ).
+ * 
+ * NOTE: 
+ * If their is any node whose arbitrary pointer is not given then its by default null.
+ * 
+ * OUTPUT:
+ * For each testcase, clone the given linked list.
+ * 
+ * Complexity: O(n)
+ * Space: O(n)
+ */
+
 import java.util.Scanner;
 
 
