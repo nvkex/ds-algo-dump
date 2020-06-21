@@ -155,14 +155,16 @@ class Clone {
                 tempH.next.arb = null;
             else
                 tempH.next.arb = tempH.arb.next;
-
-            tempH.next = tempH.next.next;
-
+                
+            tempH = tempH.next.next;
+        }
+        tempH = head;
+        while(tempH != null){
             if(copy.next != null)
                 copy.next = copy.next.next;
-            else
-                copy.next = null;
-
+            
+            if(tempH.next != null)
+                tempH.next = tempH.next.next;
             copy = copy.next;
             tempH = tempH.next;
         }
